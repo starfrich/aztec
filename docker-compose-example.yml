@@ -1,0 +1,23 @@
+name: aztec-node
+services:
+  node:
+    image: aztecprotocol/aztec:latest
+    # Using default bridge networking instead of host
+    environment:
+      # Example values: ETHEREUM_HOSTS: "https://eth-sepolia.g.alchemy.com/"
+      ETHEREUM_HOSTS: "$YOUR_ETH_SEPOLIA_RPC"
+      # Example values: L1_CONSENSUS_HOST_URLS: "https://eth-sepolia.g.alchemy.com/"
+      L1_CONSENSUS_HOST_URLS: "$YOUR_BEACON_ETH_SEPOLIA_RPC"
+      DATA_DIRECTORY: /data
+      # Example values: VALIDATOR_PRIVATE_KEY: "0x0000000000000000000000000000000000000"
+      VALIDATOR_PRIVATE_KEY: "$YOUR_PRIVATE_KEY"
+      # Example values: P2P_IP: "123.123.123.123"
+      P2P_IP: "$YOUR_IP"
+    entrypoint: >
+      sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer --p2p.maxTxPoolSize 1000000000'
+    ports:
+      - "40400:40400/tcp"
+      - "40400:40400/udp"
+      - "8080:8080"
+    volumes:
+      - ./aztec-data:/data # Local directory for persistent storage
