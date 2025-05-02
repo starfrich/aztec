@@ -141,7 +141,7 @@ docker compose up -d
 ```bash
 curl -s -X POST -H 'Content-Type: application/json' \
 -d '{"jsonrpc":"2.0","method":"node_getL2Tips","params":[],"id":67}' \
-http://localhost:8080 | jq -r ".result.proven.number"
+http://localhost:8080 | jq -r '"Block Number: " + (.result.proven.number | tostring)'
 ```
 
 ### Task 2: Generate Proof
@@ -149,7 +149,7 @@ http://localhost:8080 | jq -r ".result.proven.number"
 ```bash
 curl -s -X POST -H 'Content-Type: application/json' \
 -d '{"jsonrpc":"2.0","method":"node_getArchiveSiblingPath","params":["BLOCK_NUMBER","BLOCK_NUMBER"],"id":67}' \
-http://localhost:8080 | jq -r ".result"
+http://localhost:8080 | jq -r '"Proof: " + .result'
 ```
 
 ### Task 3: Discord Registration
