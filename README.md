@@ -39,7 +39,7 @@ There are no token incentives and no real economic stakes at this stage — but 
 > **Before You Start:**  
 > - You need ETH Sepolia (at least 0.1 ETH)
 > - You need ETH Sepolia RPC from: Alchemy/Infura/DRPC
-> - You need ETH Beacon RPC from: DRPC
+> - You need ETH Beacon Sepolia RPC from: DRPC
 
 ### Step 1: Install Dependencies
 
@@ -87,7 +87,7 @@ cat wallet.json
 ```bash
 # Create Docker Compose File
 cd ~/aztec
-cp docker-compose-example.yml docker-compose.yml
+cp example-docker-compose.yml docker-compose.yml
 
 # Get your IP
 curl -4 ifconfig.me
@@ -102,7 +102,8 @@ nano docker-compose.yml
 
 ```bash
 # Install Aztec
-bash -i <(curl -s https://install.aztec.network)  # Click Y when prompted
+bash -i <(curl -s https://install.aztec.network)
+# Click Y when prompted
 source /root/.bash_profile
 
 # Verify version
@@ -116,6 +117,19 @@ docker compose up -d
 
 # Check logs
 docker logs -f aztec-node
+```
+
+### Updating Sequencer Node
+```bash
+docker compose down
+```
+
+```bash
+aztec-up alpha-testnet
+```
+
+```bash
+docker compose up -d
 ```
 
 ---
