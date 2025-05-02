@@ -1,6 +1,6 @@
-name: aztec-node
 services:
-  node:
+  aztec-node:
+    container_name: aztec-node
     image: aztecprotocol/aztec:latest
     # Using default bridge networking instead of host
     environment:
@@ -21,3 +21,9 @@ services:
       - "8080:8080"
     volumes:
       - ./aztec-data:/data # Local directory for persistent storage
+    networks:
+      - aztec-network
+
+networks:
+  aztec-network:
+    name: aztec-network

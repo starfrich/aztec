@@ -16,6 +16,14 @@ To run an Aztec Sequencer node, you'll need a machine with the following minimum
 
 > ✅ A typical consumer desktop or laptop can run this node without issue.
 
+### 🖥️ Recommended VDS & Dedicated Server Providers
+
+If you need to purchase a dedicated server, here are some recommended providers:
+
+1. [DediOutlet](https://dedioutlet.com/secure/aff.php?aff=154)
+2. [FiberState](https://billing.fiberstate.com/aff.php?aff=175)
+3. [Servarica](https://clients.servarica.com/aff.php?aff=973)
+
 ---
 
 ## 💸 Will I Earn Real Rewards for Running a Node?
@@ -107,7 +115,7 @@ aztec-up alpha-testnet
 docker compose up -d
 
 # Check logs
-docker logs -f aztec-node-node-1
+docker logs -f aztec-node
 ```
 
 ---
