@@ -162,6 +162,14 @@ http://localhost:8080 | jq -r '"Proof: " + .result'
 
 ---
 
+### Task 4: Upgrade Apprentice to Guardian
+
+1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1370120277752549487
+2. Type: `/checkip ip:123.123.123.123`
+   - **ip**: your ip address that used to run sequencer
+  
+---
+
 ## 🔐 Register as Validator
 
 ```bash
