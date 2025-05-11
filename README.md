@@ -180,6 +180,18 @@ http://localhost:8080 | jq -r '"Proof: " + .result'
   
 ---
 
+### Peer ID
+
+Find your peer id by this command:
+
+```bash
+docker logs $(docker ps -q --filter name=aztec-node | head -n 1) 2>&1 | grep -i "peerId" | grep -o '"peerId":"[^"]*"' | cut -d'"' -f4 | head -n 1
+```
+
+You can check your sequencer info on nethermind https://aztec.nethermind.io
+
+---
+
 ## 🔐 Register as Validator
 
 ```bash
