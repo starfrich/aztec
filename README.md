@@ -34,6 +34,12 @@ There are no token incentives and no real economic stakes at this stage — but 
 
 ---
 
+## RPC
+
+Most free RPC services have limitations, but don't worry, we've got you covered. At just $20/month, it's much cheaper than other providers that can charge more. DM me on Telegram @starfishprerich, and we can work something out.
+
+> $20/month is per IP, meaning $20 for 1 IP for 1 month.
+
 ## 🛠️ Installation & Configuration
 
 > **Before You Start:**  
