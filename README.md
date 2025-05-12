@@ -81,6 +81,8 @@ git clone https://github.com/starfrich/aztec.git
 
 ### Step 3: Create Wallet
 
+> If you already have wallet, you can skip this step.
+
 ```bash
 # Create Wallet
 cd aztec/create_wallet && npm init -y && npm i
