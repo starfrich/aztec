@@ -26,21 +26,21 @@ If you need to purchase a dedicated server, here are some recommended providers:
 
 ---
 
+## RPC
+
+Most free RPC services have limitations, but don't worry, we've got you covered. At just $20/month, it's much cheaper than other providers that can charge more. DM me on Telegram [starfish](https://t.me/starfishprerich) OR [robapuros](https://t.me/Robapuros), and we can work something out.
+
+> $20/month is per IP, meaning $20 for 1 IP for 1 month.
+
+> We can only cover 5 ip for now.
+
+---
+
 ## 💸 Will I Earn Real Rewards for Running a Node?
 
 **No.**  
 The Public Testnet is strictly a dry-run environment.  
 There are no token incentives and no real economic stakes at this stage — but your feedback and uptime will play a vital role in ensuring a reliable and secure mainnet launch.
-
----
-
-## RPC
-
-Most free RPC services have limitations, but don't worry, we've got you covered. At just $20/month, it's much cheaper than other providers that can charge more. DM me on Telegram @starfishprerich, and we can work something out.
-
-> $20/month is per IP, meaning $20 for 1 IP for 1 month.
-
-> We can only cover 5 ip for now.
 
 ---
 
