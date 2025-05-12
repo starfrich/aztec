@@ -110,24 +110,15 @@ nano docker-compose.yml
 # CTRL + X then Y and ENTER to save
 ```
 
-### Step 5: Install Aztec
-
-```bash
-# Install Aztec
-bash -i <(curl -s https://install.aztec.network)
-# Click Y when prompted
-source /root/.bash_profile
-
-# Verify version
-aztec -V
-
-# Update Aztec
-aztec-up alpha-testnet
+### Step 5: Run Aztec Sequencer
 
 # Run the Sequencer
+```bash
 docker compose up -d
+```
 
 # Check logs
+```bash
 docker logs -f aztec-node
 ```
 
@@ -137,7 +128,7 @@ docker compose down
 ```
 
 ```bash
-aztec-up alpha-testnet
+docker compose pull aztec:0.85.0-alpha-testnet.8
 ```
 
 ```bash
