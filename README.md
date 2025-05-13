@@ -26,7 +26,7 @@ If you need to purchase a dedicated server, here are some recommended providers:
 
 ---
 
-## RPC
+<!-- ## RPC
 
 Most free RPC services have limitations — but don’t worry, we’ve got you covered. At just **$20/month** (promo for the first **5 slots filled**), it’s way cheaper than other providers who charge much more.
 
@@ -41,7 +41,7 @@ DM me on Telegram: [starfish](https://t.me/starfishprerich) or [robapuros](https
 > 📌 **First Come, First Served** — no booking system. Whoever confirms payment first, gets the slot. 
 
 
----
+--- -->
 
 ## 💸 Will I Earn Real Rewards for Running a Node?
 
