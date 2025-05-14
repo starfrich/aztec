@@ -133,7 +133,7 @@ docker compose down
 ```bash
 aztec-up alpha-testnet
 ```
-> If aztec not found, you need to download aztec: ```bash -i <(curl -s https://install.aztec.network)``` thenb re-run the command above.
+> If aztec not found, you need to download aztec: ```bash -i <(curl -s https://install.aztec.network)``` then re-run the command above.
 
 ```bash
 docker compose up -d
