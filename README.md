@@ -219,6 +219,7 @@ aztec add-l1-validator \
 ### 1. **ERROR: archiver Error syncing archiver: No blob bodies found for block xxxxx**
 
 This means you need to change your **Beacon Sepolia RPC**.
+You can either switch to another provider, [self-host](https://github.com/starfrich/eth-beacon-sepolia), or rent from [someone](https://t.me/starfishprerich).
 
 ---
 
