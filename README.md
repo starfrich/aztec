@@ -216,33 +216,37 @@ aztec add-l1-validator \
 
 ## Known Issues
 
-1. **ERROR: archiver Error syncing archiver: No blob bodies found for block xxxxx**
+### 1. **ERROR: archiver Error syncing archiver: No blob bodies found for block xxxxx**
 
-   This means you need to change your **Beacon Sepolia RPC**.
-
----
-
-2. **Rollup__ManaLimitExceeded**
-
-   This means your free RPC has hit the maximum credit limit.  
-   You can either switch to another provider, [self-host](https://github.com/starfrich/eth-beacon-sepolia), or rent from [someone](https://t.me/starfishprerich).
+This means you need to change your **Beacon Sepolia RPC**.
 
 ---
 
-3. **WARN: p2p:tx_validator:tx_metadata Rejecting tx .......................**
+### 2. **Rollup__ManaLimitExceeded**
 
-   No worries — this is normal and safe to ignore.
-
----
-
-4. **Peer ID not showing on [Nethermind](https://aztec.nethermind.io)**
-
-   As long as your logs show that you’re connected to peers, it’s fine.
+This means your free RPC has hit the maximum credit limit.  
+You can either switch to another provider, [self-host](https://github.com/starfrich/eth-beacon-sepolia), or rent from [someone](https://t.me/starfishprerich).
 
 ---
 
-5. **ERROR: p2p:reqresp Unexpected error sending request to peer: CodeError: .......................**
+### 3. **WARN: p2p:tx_validator:tx_metadata Rejecting tx .......................**
 
-   ```bash
-   docker compose down && aztec-up alpha-testnet && docker compose up -d
-   ```
+No worries — this is normal and safe to ignore.
+
+---
+
+### 4. **Peer ID not showing on [Nethermind Peer Checker](https://aztec.nethermind.io)**
+
+There are 2 possible reasons:
+- Try running `telnet your_ip 40400`.  
+  If it’s not connected, it means your port is not open.
+- As long as your logs show that you’re connected to peers, it’s fine.
+
+---
+
+### 5. **ERROR: p2p:reqresp Unexpected error sending request to peer: CodeError: .......................**
+
+Run the following command:
+
+```bash
+docker compose down && aztec-up alpha-testnet && docker compose up -d
