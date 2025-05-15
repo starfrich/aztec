@@ -174,7 +174,11 @@ http://localhost:8080 | jq -r '"Proof: " + .result'
 1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1370120277752549487
 2. Type: `/checkip ip:123.123.123.123`
    - **ip**: your ip address that used to run sequencer
-  
+
+> If you cant upgrade your roles, it means you need to wait next batch.
+
+---
+
 ---
 
 ### Peer ID
@@ -207,3 +211,38 @@ aztec add-l1-validator \
 - **attester & proposer-eoa**: Your address from wallet.json
 
 > **Note:** You may see a warning when trying to register as a validator. To maintain network health there is a daily quota for validators to join the validator set. If you are not able to join, it could mean that today's quota of validators has already been added to the set. If you see this, you can try again later. Read our [blog post](https://aztec.network/blog/what-is-aztec-testnet) for more info.
+
+---
+
+## Known Issues
+
+1. **ERROR: archiver Error syncing archiver: No blob bodies found for block xxxxx**
+
+   This means you need to change your **Beacon Sepolia RPC**.
+
+---
+
+2. **Rollup__ManaLimitExceeded**
+
+   This means your free RPC has hit the maximum credit limit.  
+   You can either switch to another provider, [self-host](https://github.com/starfrich/eth-beacon-sepolia), or rent from [someone](https://t.me/starfishprerich).
+
+---
+
+3. **WARN: p2p:tx_validator:tx_metadata Rejecting tx .......................**
+
+   No worries — this is normal and safe to ignore.
+
+---
+
+4. **Peer ID not showing on [Nethermind](https://aztec.nethermind.io)**
+
+   As long as your logs show that you’re connected to peers, it’s fine.
+
+---
+
+5. **ERROR: p2p:reqresp Unexpected error sending request to peer: CodeError: .......................**
+
+   ```bash
+   docker compose down && aztec-up alpha-testnet && docker compose up -d
+   ```
