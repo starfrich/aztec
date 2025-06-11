@@ -253,4 +253,4 @@ There are 2 possible reasons:
 Run the following command:
 
 ```bash
-docker compose down && aztec-up alpha-testnet && docker compose up -d
+docker compose down && docker compose pull && docker compose up -d
