@@ -4,6 +4,11 @@ Welcome to the **Aztec Sequencer Node** setup guide!
 This tutorial will walk you through the essential requirements and steps to set up your node for the Aztec Public Testnet.
 
 ---
+# Aztec Dashboard
+
+Primarily designed for validators, but also provides access to various Aztec network information: [View Dashboard](https://aztec.starfrich.me)
+
+---
 
 ## ⚙️ Hardware Requirements
 
@@ -130,9 +135,8 @@ docker compose down
 ```
 
 ```bash
-aztec-up alpha-testnet
+docker compose pull
 ```
-> If aztec not found, you need to download aztec: ```bash -i <(curl -s https://install.aztec.network)``` then re-run the command above.
 
 ```bash
 docker compose up -d
@@ -158,9 +162,11 @@ curl -s -X POST -H 'Content-Type: application/json' \
 http://localhost:8080 | jq -r '"Proof: " + .result'
 ```
 
+> Change BLOCK_NUMBER to actual block number.
+
 ### Task 3: Discord Registration
 
-1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1367196595866828982/1367323893324582954
+1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1367196595866828982/1367323893324582954(operators| start-here)
 2. Type: `/operator start address: block-number: proof:`
    - **address**: Your address from wallet.json
    - **block-number**: Block number from Task 1
@@ -170,13 +176,11 @@ http://localhost:8080 | jq -r '"Proof: " + .result'
 
 ### Task 4: Upgrade Apprentice to Guardian
 
-1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1370120277752549487
+1. Go to Aztec Discord: https://discord.com/channels/1144692727120937080/1370120277752549487(apprentice -> upgrade-role)
 2. Type: `/checkip ip:123.123.123.123`
    - **ip**: your ip address that used to run sequencer
 
 > If you cant upgrade your roles, it means you need to wait next batch.
-
----
 
 ---
 

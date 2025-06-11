@@ -1,7 +1,7 @@
 services:
   aztec-node:
     container_name: aztec-node
-    image: aztecprotocol/aztec:alpha-testnet
+    image: aztecprotocol/aztec:latest
     # Using default bridge networking instead of host
     environment:
       # Example values: ETHEREUM_HOSTS: "https://eth-sepolia.g.alchemy.com/"
